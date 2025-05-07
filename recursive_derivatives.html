@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Recursive Heaviside Derivatives</title>
+  <!-- MathJax CDN 로딩 -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
@@ -12,16 +13,22 @@
 
 <h1>Recursive Heaviside Function: Mixed Derivatives</h1>
 
-<p>In this case, the second-order mixed derivative is defined as:</p>
+<p>This is a test page for displaying LaTeX-style math using MathJax.</p>
 
+<p>
+Here is a second-order mixed derivative:
+</p>
+
+<!-- 반드시 \[ ... \] 또는 \\( ... \\) 형식으로 수식 넣기 -->
 <p>
 \[
 \frac{\partial^2 u}{\partial \tau_2 \partial \tau_1}
-= - \delta_{N_1}(A) \cdot \delta_{N_2}(B) - \delta'(A) \cdot \tau_1 \cdot \delta_{N_2}(C) \cdot H_{N_2}(C)
+= - \delta_{N_1}(A) \cdot \delta_{N_2}(B)
+- \delta'(A) \cdot \tau_1 \cdot \delta_{N_2}(C) \cdot H_{N_2}(C)
 \]
 </p>
 
-<p>with:</p>
+<p>Where:</p>
 
 <p>
 \[
@@ -31,3 +38,4 @@ A = -t + \tau_1 H_{N_2}(B), \quad B = -t + \tau_2
 
 </body>
 </html>
+
